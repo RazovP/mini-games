@@ -132,4 +132,21 @@ body {
   font-weight: 700;
   line-height: 39px;
   text-align: left;
+}
+
+.header__btm:hover {
+  background: rgb(255, 255, 255);
+  color: black;
+}
+
+.header__btm {
+  transition: all 0.5s;
+}
+
+.card__link:hover {
+  transform: scale(1.1);
+}
+
+.card__link {
+  transition: all 1s;
 }/*# sourceMappingURL=style.css.map */
