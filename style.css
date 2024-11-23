@@ -98,6 +98,7 @@ body {
   flex-direction: column;
   padding: 32px;
   gap: 16px;
+  max-width: 304px;
 }
 .card__nomber {
   box-sizing: border-box;
