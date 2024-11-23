@@ -13,6 +13,9 @@ body{
 }
 .top{
     background-color: rgb(225, 255, 143);
+    background-image: url(./img/head-star1.svg), url(./img/head-star2.svg), url(./img/head-star3.svg);
+    background-repeat: no-repeat;
+    background-position: 63px 69px, 100% 0, calc(100% - 344px) calc(100% - 149px);
 }
 .header{
     padding-bottom: 246px;
@@ -52,4 +55,63 @@ body{
         border-radius: 60px;
         background: rgb(32, 32, 39);
     }
+}
+.about{
+    background-color: rgb(32, 32, 39);
+    &__title{
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        text-align: left;
+        padding-top: 94px;
+        padding-bottom: 24px;
+    }
+    &__txt{
+        max-width: 788px;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: left;
+        padding-bottom: 72px;
+    }
+}
+.card{
+    border-radius: 30px;
+    background-color: white;
+    width: 378px;
+    &__link{
+        text-decoration: none;
+    }
+    &__img{
+        border-radius: 30px;
+    }
+    &__txt{
+        text-decoration-line: none;
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        gap: 16px;
+    }
+    &__nomber{
+        box-sizing: border-box;
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);    
+        padding: 10px 16px;
+        width: 108px; 
+        color: rgb(32, 32, 39);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        text-align: left;
+    }
+    &__name{
+        color: rgb(32, 32, 39);
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        text-align: left;
+    }
+
 }
