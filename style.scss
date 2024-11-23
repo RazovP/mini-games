@@ -58,6 +58,10 @@ body{
 }
 .about{
     background-color: rgb(32, 32, 39);
+    background-image: url(./img/about-star1.svg), url(./img/about-star2.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 100px, 25px 770px;
+    padding-bottom: 50px;
     &__title{
         color: rgb(255, 255, 255);
         font-size: 64px;
@@ -77,13 +81,23 @@ body{
         padding-bottom: 72px;
     }
 }
-
+.card-box{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    
+}
 .card{
+    
     border-radius: 30px;
     background-color: white;
     width: 378px;
     &__link{
         text-decoration: none;
+        grid-column: span 4;
+        &_top{
+            margin-top: -40px;
+        }
     }
     &__img{
         border-radius: 30px;
@@ -101,7 +115,7 @@ body{
         border-radius: 52.58px;
         background: rgb(247, 247, 247);    
         padding: 10px 16px;
-        width: 108px; 
+        width: 112px; 
         color: rgb(32, 32, 39);
         font-size: 16px;
         font-weight: 500;
