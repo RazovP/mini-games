@@ -84,9 +84,10 @@ body{
     }
 }
 .card-box{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 32px;
+    justify-content: center;
     
 }
 .card{
@@ -96,13 +97,14 @@ body{
     width: 378px;
     &__link{
         text-decoration: none;
-        grid-column: span 4;
+
         &_top{
             margin-top: -40px;
         }
     }
     &__img{
         border-radius: 30px;
+        width: 100%;
     }
     &__txt{
         text-decoration-line: none;
@@ -131,6 +133,35 @@ body{
         line-height: 39px;
         text-align: left;
     }
+    &__planshet{
+        display: none
+    }
+}
+@import 'hover';
+@media (max-width: 1200px){
+    .center{
+        padding-left: calc(50% - 786px/2);
+        padding-right: calc(50% - 786px/2);
+
+    }
+    .card{
+        width: 375px;
+
+
+        &__pc{
+        display: none;
+        }
+        &__planshet{
+            display: block;
+        }
+    }
+    
+}
+@media (max-width: 833px){
+    .center{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    
 
 }
-@import 'hover'

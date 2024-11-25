@@ -90,9 +90,10 @@ body {
 }
 
 .card-box {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 32px;
+  justify-content: center;
 }
 
 .card {
@@ -102,13 +103,13 @@ body {
 }
 .card__link {
   text-decoration: none;
-  grid-column: span 4;
 }
 .card__link_top {
   margin-top: -40px;
 }
 .card__img {
   border-radius: 30px;
+  width: 100%;
 }
 .card__txt {
   text-decoration-line: none;
@@ -137,6 +138,9 @@ body {
   line-height: 39px;
   text-align: left;
 }
+.card__planshet {
+  display: none;
+}
 
 .header__btm:hover {
   background: rgb(255, 255, 255);
@@ -153,4 +157,26 @@ body {
 
 .card__link {
   transition: all 1s;
+}
+
+@media (max-width: 1200px) {
+  .center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+  }
+  .card {
+    width: 375px;
+  }
+  .card__pc {
+    display: none;
+  }
+  .card__planshet {
+    display: block;
+  }
+}
+@media (max-width: 833px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */
