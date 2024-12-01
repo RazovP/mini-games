@@ -22,13 +22,13 @@
             <a class="header__btm" href="#about-games">Поехали!</a>
         </header>
     </div>
-    <section id="about-games" class="about center >
+    <section id="about-games" class="about center" >
         <h2 class="about__title">Об Играх</h2>
         <p class="about__txt">В моей коллекции представлено 6 игр на разные темы. <br>
             Игры несложные — в них может поиграть каждый. <br>
             Все игры доступны для пользования.</p>
         <div class="card-box">
-            <a class="card__link" href="#">
+            <a class="card__link" href="#guess">
                 <article class="card">
                     <img class="card__img" src="./img/guess.jpg" alt="guess">
                     <div class="card__txt">
@@ -37,7 +37,7 @@
                     </div>
                 </article>
             </a>
-            <a class="card__link" href="#">
+            <a class="card__link" href="#arifm">
                 <article class="card">
                     <img class="card__img" src="./img/arifm.jpg" alt="arifm">
                     <div class="card__txt">
@@ -46,7 +46,7 @@
                     </div>
                 </article>
             </a>
-            <a class="card__link card__link_top card__planshet" href="#">
+            <a class="card__link card__link_top card__planshet" href="#knb">
                 <article class="card">
                     <img class="card__img" src="./img/knb.jpg" alt="knb">
                     <div class="card__txt">
@@ -55,7 +55,7 @@
                     </div>
                 </article>
             </a>
-            <a class="card__link" href="#">
+            <a class="card__link" href="#revers">
                 <article class="card">
                     <img class="card__img" src="./img/revers.jpg" alt="revers">
                     <div class="card__txt">
@@ -64,7 +64,7 @@
                     </div>
                 </article>
             </a>
-            <a class="card__link card__link_top card__pc" href="#">
+            <a class="card__link card__link_top card__pc" href="#knb">
                 <article class="card">
                     <img class="card__img" src="./img/knb.jpg" alt="knb">
                     <div class="card__txt">
@@ -73,16 +73,16 @@
                     </div>
                 </article>
             </a>
-            <a class="card__link" href="#">
+            <a class="card__link" href="#quiz">
                 <article class="card">
-                    <img class="card__img" src="./img/quiz.jpg" alt="qiuz">
+                    <img class="card__img" src="./img/quiz.jpg" alt="quiz">
                     <div class="card__txt">
                         <p class="card__nomber">Игра № 5</p>
                         <h3 class="card__name">Простая викторина</h3>
                     </div>
                 </article>
             </a>
-            <a class="card__link card__link_top" href="#">
+            <a class="card__link card__link_top" href="#generator">
                 <article class="card">
                     <img class="card__img" src="./img/generator.jpg" alt="generator">
                     <div class="card__txt">
@@ -93,6 +93,67 @@
             </a>
         </div>
     </section>
+    <section class="mini-games center">
+        <h2 class="mini-games__title">Мини-иры</h2>
+        <div class="game-box">
+            <article id="guess" class="game">
+                <div class="game__info">
+                    <h3 class="game__title">Угадай число</h3>
+                    <p class="game__opis">Попробуй угадать случайное<br> число от 1 до 100.</p>
+                    <a href="#" class="game__btm">Играть!</a>
+                </div>
+                <img class="game__img" src="./img/guess.jpg" alt="Угадай">
+            </article>
+            <article id="arifm" class="game">
+                <img class="game__img" src="./img/arifm.jpg" alt="Угадай">
+                <div class="game__info">
+                    <h3 class="game__title">Простая арифметика</h3>
+                    <p class="game__opis">Попробуй решить простые арифметические задачи.</p>
+                    <a href="#" class="game__btm">Играть!</a>
+                </div>
+                
+            </article>
+            <article id="revers" class="game">
+                <div class="game__info">
+                    <h3 class="game__title">Переверни текст</h3>
+                    <p class="game__opis">Попробуй ввести текст, который<br> будет перевернут.</p>
+                    <a href="#" class="game__btm">Играть!</a>
+                </div>
+                <img class="game__img" src="./img/revers.jpg" alt="Угадай">
+            </article>
+            <article id="quiz" class="game">
+                <img class="game__img" src="./img/quiz.jpg" alt="Угадай">
+                <div class="game__info">
+                    <h3 class="game__title">Викторина</h3>
+                    <p class="game__opis">Отвечай на вопросы викторины с&nbspвариантами ответов.</p>
+                    <a href="#" class="game__btm">Играть!</a>
+                </div>
+                
+            </article>
+            <article id="knb" class="game">
+                <div class="game__info">
+                    <h3 class="game__title">Камень,<br> ножницы, <br>бумага</h3>
+                    <p class="game__opis">Сыграй в популярную игру против&nbspкомпьютера.</p>
+                    <a href="#" class="game__btm">Играть!</a>
+                </div>
+                <img class="game__img" src="./img/knb.jpg" alt="Угадай">
+            </article>
+            <article id="generator" class="game">
+                <img class="game__img" src="./img/generator.jpg" alt="Угадай">
+                <div class="game__info">
+                    <h3 class="game__title">Генератор случайных <br>цветов</h3>
+                    <p class="game__opis">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                    <a href="#" class="game__btm">Играть!</a>
+                </div>
+
+            </article>
+
+        </div>
+    </section>
+    <footer class="footer center">
+        <h3 class="footer__title">Все права защищены.</h3>
+    </footer>
+
     <!-- <script src="./hw-2.js"></script> -->
     
 
