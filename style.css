@@ -171,7 +171,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
   background-color: white;
   border-radius: 52px;
-  height: 500px;
 }
 .game__img {
   grid-column: span 1;
@@ -326,5 +325,50 @@ body {
   }
   .about {
     display: none;
+  }
+  .mini-games {
+    background-image: none;
+  }
+  .mini-games__title {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .game-box {
+    gap: 24px;
+    padding-bottom: 49px;
+  }
+  .game {
+    display: flex;
+    flex-direction: column;
+  }
+  .game__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+  }
+  .game__opis {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .game__btm {
+    width: auto;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+  }
+  .game-revers {
+    flex-direction: column-reverse;
+  }
+  .footer__title {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
