@@ -1,0 +1,6 @@
+const newspaper = {
+    sports:{
+        sports:
+        
+    }
+}
