@@ -60,3 +60,54 @@ function arifm() {
     alert(`Молодец!!!`)
 
 }
+
+// Игра переверни текст
+
+function revers() {
+    let wordUser = prompt(`Введите любое слово, а мы его перевернем!`);
+    if (wordUser === null) {
+        return;
+    }
+    let wordRevers = wordUser.split('').reverse().join('');
+    alert(`Слово наоборот: ${wordRevers}`);
+    
+}
+
+// Игра Викторина
+
+function quiz() {
+    const quiz = [
+        {
+            question: "Какой цвет небо?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2 // номер правильного ответа
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+    
+    let userAnswer;
+    let numerCorrect = 0;
+    for (const index in quiz) {
+        userAnswer = prompt(`${quiz[index].question} Выберите номер варианта ответа: ${quiz[index].options.join('; ')}`);
+        console.log(userAnswer);
+     
+        if (userAnswer === null) {
+            return;
+        }
+        if (userAnswer == quiz[index].correctAnswer) {
+            numerCorrect++
+        }
+
+    }
+    alert(`Колличество правильных ответов: ${numerCorrect}`);
+}
+

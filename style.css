@@ -266,15 +266,6 @@ body {
     padding-left: calc(50% - 393px);
     padding-right: calc(50% - 393px);
   }
-  .card {
-    width: 375px;
-  }
-  .card__pc {
-    display: none;
-  }
-  .card__planshet {
-    display: block;
-  }
 }
 @media (max-width: 833px) {
   .center {
