@@ -41,7 +41,7 @@ function random10() {
 }
 console.log(random10());
 
-Задание 6
+//Задание 6
 
 function creatArray(n) {
     const randomArray = [];
