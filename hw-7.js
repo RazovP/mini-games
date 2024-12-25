@@ -1,47 +1,47 @@
-// // Задание 1
+// Задание 1
 
-// let str1 = 'js';
-// str1 = str1.toUpperCase();
-// console.log(str1);
+let str1 = 'js';
+str1 = str1.toUpperCase();
+console.log(str1);
 
-// // Задание 2
+// Задание 2
 
-// function massiv(array,string) {
-//     return array.filter(item => item.toLowerCase().startsWith(string.toLowerCase()));
+function massiv(array,string) {
+    return array.filter(item => item.toLowerCase().startsWith(string.toLowerCase()));
 
-// }
-// const massiv2 = ['qwerty', 'qwe', 'asdf','zxcv','qwer'];
-// const str2='qwe'
+}
+const massiv2 = ['qwerty', 'qwe', 'asdf','zxcv','qwer'];
+const str2='qwe'
 
-// const result2 =massiv(massiv2,str2);
-// console.log(result2);
+const result2 =massiv(massiv2,str2);
+console.log(result2);
 
 
-// // Задание 3
+// Задание 3
 
-// const num3 = 32.58884;
-// console.log(Math.floor(num3));
-// console.log(Math.ceil(num3));
-// console.log(Math.round(num3));
+const num3 = 32.58884;
+console.log(Math.floor(num3));
+console.log(Math.ceil(num3));
+console.log(Math.round(num3));
 
-// // Задание 4
+// Задание 4
 
-// const numbers4 = [52, 53, 49, 77, 21, 32];
+const numbers4 = [52, 53, 49, 77, 21, 32];
 
-// const minNum4 = Math.min(...numbers4);
-// const maxNum4 = Math.max(...numbers4);
+const minNum4 = Math.min(...numbers4);
+const maxNum4 = Math.max(...numbers4);
 
-// console.log('Минимальное значение:', minNum4);
-// console.log('Максимальное значение:', maxNum4); 
+console.log('Минимальное значение:', minNum4);
+console.log('Максимальное значение:', maxNum4); 
 
-// // Задание 5
+// Задание 5
 
-// function random10() {
-//     return Math.ceil(Math.random() * 10);
-// }
-// console.log(random10());
+function random10() {
+    return Math.ceil(Math.random() * 10);
+}
+console.log(random10());
 
-// Задание 6
+Задание 6
 
 function creatArray(n) {
     const randomArray = [];
