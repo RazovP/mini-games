@@ -239,17 +239,7 @@ body{
         padding-right: calc(50% - 786px/2);
 
     }
-    .card{
-        width: 375px;
 
-
-        &__pc{
-        display: none;
-        }
-        &__planshet{
-            display: block;
-        }
-    }
     
 }
 @media (max-width: 833px){
