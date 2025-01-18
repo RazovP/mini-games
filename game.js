@@ -70,7 +70,7 @@ function revers() {
     }
     let wordRevers = wordUser.split('').reverse().join('');
     alert(`Слово наоборот: ${wordRevers}`);
-    
+
 }
 
 // Игра Викторина
@@ -93,13 +93,13 @@ function quiz() {
             correctAnswer: 2
         }
     ];
-    
+
     let userAnswer;
     let numerCorrect = 0;
     for (const index in quiz) {
         userAnswer = prompt(`${quiz[index].question} Выберите номер варианта ответа: ${quiz[index].options.join('; ')}`);
         console.log(userAnswer);
-     
+
         if (userAnswer === null) {
             return;
         }
@@ -111,3 +111,28 @@ function quiz() {
     alert(`Колличество правильных ответов: ${numerCorrect}`);
 }
 
+// Игра "Камень, ножницы, бумага"
+function knb() {
+
+    let userChoice = prompt("Выберите: камень, ножницы или бумага").toLowerCase();
+    if (userChoice !== "камень" && userChoice !== "ножницы" && userChoice !== "бумага") {
+        alert("Вы ввели что-то не так, пожалуйста, выберите: камень, ножницы или бумага.");
+    } else {
+        const options = ["камень", "ножницы", "бумага"];
+        const computerChoice = options[Math.floor(Math.random() * options.length)];
+        let result;
+        if (userChoice === computerChoice) {
+            result = "Ничья!";
+        } else if (
+            (userChoice === "камень" && computerChoice === "ножницы") ||
+            (userChoice === "ножницы" && computerChoice === "бумага") ||
+            (userChoice === "бумага" && computerChoice === "камень")
+        ) {
+            result = "Вы победили!";
+        } else {
+            result = "Вы проиграли!";
+        }
+
+        alert(`Ваш выбор: ${userChoice}; Выбор компьютера: ${computerChoice}; Результат: ${result}`);
+    }
+}
