@@ -239,7 +239,9 @@ body{
         padding-right: calc(50% - 786px/2);
 
     }
-
+    .card__link_top{
+        margin-top: 0px;
+    }
     
 }
 @media (max-width: 833px){
