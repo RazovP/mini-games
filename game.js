@@ -114,7 +114,12 @@ function quiz() {
 // Игра "Камень, ножницы, бумага"
 function knb() {
 
-    let userChoice = prompt("Выберите: камень, ножницы или бумага").toLowerCase();
+    let userChoice = prompt("Выберите: камень, ножницы или бумага");
+    if (userChoice === null) {
+        return;
+    }
+    userChoice = userChoice.toLowerCase()
+
     if (userChoice !== "камень" && userChoice !== "ножницы" && userChoice !== "бумага") {
         alert("Вы ввели что-то не так, пожалуйста, выберите: камень, ножницы или бумага.");
     } else {
@@ -136,3 +141,26 @@ function knb() {
         alert(`Ваш выбор: ${userChoice}; Выбор компьютера: ${computerChoice}; Результат: ${result}`);
     }
 }
+
+// Генератор случайных чисел
+// Получаем ссылки на кнопку и секции
+const generateButton = document.querySelector('.generator');
+const miniGamesSection = document.querySelector('.mini-games');
+const aboutSection = document.querySelector('.about');
+let newColor
+
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+generateButton.addEventListener('click', () => {
+    newColor = getRandomColor();
+    miniGamesSection.style.backgroundColor = newColor;
+    aboutSection.style.backgroundColor = newColor;
+
+});
